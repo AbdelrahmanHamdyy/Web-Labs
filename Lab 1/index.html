@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <title>Sign Up Form</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Sign Up Form</h2>
+      <form id="signup-form">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div class="form-group">
+          <label for="retype-password">Retype Password:</label>
+          <input
+            type="password"
+            id="retype-password"
+            name="retype-password"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label>Gender:</label>
+          <input type="radio" id="male" name="gender" value="0" checked /> Male
+          <input type="radio" id="female" name="gender" value="1" /> Female
+        </div>
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" required min="0" />
+        </div>
+        <div class="form-group">
+          <label for="account-type">Account Type:</label>
+          <select id="account-type" name="account-type">
+            <option value="Student" selected>Student</option>
+            <option value="Professor">Professor</option>
+            <option value="TeachingAssistant">Teaching Assistant</option>
+          </select>
+        </div>
+        <button type="button" onclick="validateForm()">Submit</button>
+      </form>
+      <hr />
+      <footer>ⓒ Learn 2023-2024</footer>
+    </div>
+  </body>
+</html>
